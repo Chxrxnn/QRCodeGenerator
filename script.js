@@ -13,12 +13,13 @@ document.addEventListener("DOMContentLoaded",function(){
         }
             else{
                 input.classList.add("error");
+                input.style.outline="1px solid red";
                 setTimeout(()=>{
                     input.classList.remove("error");
                     input.style.outline="none";
                 },1000);
 
-                input.style.outline="1px solid red";
+               
             }
             });
 
